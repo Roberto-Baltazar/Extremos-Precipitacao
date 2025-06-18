@@ -1,0 +1,15 @@
+Scripts para gerar mapas espaciais da precipitação acumulada na cidade do Rio de Janeiro, nas escalas mensal, sazonal e anual. 
+Estão disponíveis duas versões:
+  1. Utilizando arquivos em netcdf4 (.nc)
+  2. Utilizando dados de estação em arquivos separados por vírgula (.csv)
+
+Para o item 2. os arquivos precisam estar organizados como:
+EXEMPLO:
+| latitude | longitude | ano | mes | precipitacao |
+| -22.9658 | -43.2783  | 2011|  1  |    132.2     |
+| -22.9658 | -43.2783  | 2012|  1  |    197.2     |
+etc...
+Todos os dados de todos os meses, anos e estações precisam estar no mesmo arquivo csv.
+Certifique-se de que o csv está usando ';' como separador.
+Os dados pontuais das estações são interpolados utilizando o metodo Inverse Distance Weighting (IDW), baseado em:
+https://towardsdatascience.com/3-best-methods-for-spatial-interpolation-912cab7aee47/
