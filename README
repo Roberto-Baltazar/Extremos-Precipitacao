@@ -1,4 +1,5 @@
-Scripts para gerar mapas espaciais da precipitação acumulada na cidade do Rio de Janeiro, nas escalas mensal, sazonal e anual. Pode ser adaptado para qualquer região/shape ou conjunto de dados. Aqui eles estão configurados para os dados do Alerta Rio e do ERA5.
+Scripts para gerar mapas espaciais da precipitação acumulada na cidade do Rio de Janeiro, nas escalas mensal, sazonal e anual. 
+Pode ser adaptado para qualquer região/shape ou conjunto de dados. Aqui eles estão configurados para os dados do Alerta Rio e do ERA5.
 Estão disponíveis duas versões:
   1. Utilizando arquivos em netcdf4 (.nc)
   2. Utilizando dados de estação em arquivos separados por vírgula (.csv)
